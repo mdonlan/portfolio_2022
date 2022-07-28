@@ -16,14 +16,59 @@
         <div class="intro">
             <div class="greeting">Hi I'm Michael. I'm a web developer located in Portland, Maine.</div>
             <div class="buttons_container">
-                <div class="btn projects_btn" onClick={handle_nav_click}>Projects</div>
-                <div class="btn about_btn" onClick={handle_nav_click}>About</div>
-                <div class="btn contact_btn" onClick={handle_nav_click}>Contact</div>
+                <div class="btn projects_btn" onclick="handle_nav_click(this)">Projects</div>
+                <div class="btn about_btn" onclick="handle_nav_click(this)">About</div>
+                <div class="btn contact_btn" onclick="handle_nav_click(this)">Contact</div>
+            </div>
+        </div>
+
+        <div class="projects">
+            <div class="title">Projects</div>
+            <div class="project">
+                <div class="project_left">
+                    <div class="project_title">JSON Parser c++</div>
+                    <div class="project_desc">A simple JSON parser for use with c++</div>
+                </div>
+                <div class="project_right">
+                    <div>github link</div>
+                    <div>project link</div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project_left">
+                    <div class="project_title">Calorie Counter</div>
+                    <div class="project_desc">Track how many calories you eat</div>
+                </div>
+                <div class="project_right">
+                    <div>github link</div>
+                    <div>project link</div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project_left">
+                    <div class="project_title">project_title</div>
+                    <div class="project_desc">this is a project description, blah blah blah</div>
+                </div>
+                <div class="project_right">
+                    <div>github link</div>
+                    <div>project link</div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project_left">
+                    <div class="project_title">project_title</div>
+                    <div class="project_desc">this is a project description, blah blah blah</div>
+                </div>
+                <div class="project_right">
+                    <div>github link</div>
+                    <div>project link</div>
+                </div>
             </div>
         </div>
     </div>
     
     <script src="particles_pixi_bundle.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
