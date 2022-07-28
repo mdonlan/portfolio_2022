@@ -1,0 +1,92 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+	font-family: 'Roboto';
+	height: 100%;
+  	width: 100%;
+    color: #dddddd;
+}
+
+.root {
+    position: relative;
+    height: 100%;
+	width: 100%;
+}
+
+.greeting {
+    font-size: 24px;
+}
+
+.buttons_container {
+    display: flex;
+}
+
+.btn {
+    border: 1px solid #dddddd;
+    margin: 5px;
+    margin-top: 15px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 0.2s;
+    height: 20px;
+    width: 75px;
+    text-align: center;
+    user-select: none;
+    position: relative;
+}
+
+.btn:hover {
+    margin-top: 10px;
+    background: #dddddd;
+    color: #222222; 
+    cursor: pointer;
+}
+
+@keyframes slide_right {
+    0%   {left: -50px}
+    100% {left: 0px}
+}
+
+@keyframes slide_up {
+    0%   {top: 50px}
+    100% {top: 0px}
+}
+
+@keyframes slide_left {
+    0%   {left: 50px}
+    100% {left: 0px}
+}
+
+.projects_btn {
+    animation-name: slide_right;
+    animation-duration: 1s;
+}
+
+.about_btn {
+    animation-name: slide_up;
+    animation-duration: 1s;
+}
+
+.contact_btn {
+    animation-name: slide_left;
+    animation-duration: 1s;
+}
+
+
+.intro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.particles_container {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+    /* z-index: -1; */
+}
