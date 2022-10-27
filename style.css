@@ -2,17 +2,17 @@ html, body {
     margin: 0px;
     padding: 0px;
 	font-family: 'Roboto';
+    font-size: 24px;
 	height: 100%;
   	width: 100%;
     color: #dddddd;
-    scroll-behavior: smooth;
+    background: #111111;
 }
 
 .particles_container {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-    /* z-index: -1; */
 }
 
 .root {
@@ -22,33 +22,35 @@ html, body {
 }
 
 .greeting {
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .buttons_container {
     display: flex;
 }
 
-.btn {
-    border: 1px solid #dddddd;
-    margin: 5px;
-    margin-top: 15px;
-    padding: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-    transition: all 0.2s;
-    height: 20px;
-    width: 75px;
-    text-align: center;
-    user-select: none;
+.btn_outer {
+    margin: 15px;
     position: relative;
 }
 
-.btn:hover {
-    margin-top: 10px;
+.btn_outer:hover > .btn {
+    margin-top: -5px;
     background: #dddddd;
     color: #222222; 
     cursor: pointer;
+}
+
+.btn {
+    position: absolute;
+    border: 1px solid #dddddd;
+    padding: 15px;
+    transition: all 0.3s;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    user-select: none;
+    position: relative;
 }
 
 @keyframes slide_right {
@@ -92,39 +94,51 @@ html, body {
     overflow: hidden;
 }
 
-.projects {
-    display: flex;
-	flex-direction: column;
-	align-items: center;
-	position: relative;
-	background: #111111;
-    padding-top: 40px;
-    padding-bottom: 60px;
-	/* background-image: url("https://www.transparenttextures.com/patterns/maze-black.png"); */
-	/* padding-top: 5%; */
-	/* padding-bottom: 5%; */
-}
-
 .title {
     font-size: 32px;
     margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.projects {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+	/* flex-wrap: wrap; */
+    align-items: center;
+	position: relative;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 .project {
     padding: 20px;
-    width: 400px;
-    margin-top: 20px;
+    margin: 20px;
+    width: 40%;
+    height: 100px;
     display: flex;
-    /* flex-direction: column; */
     background-color: #222222;
+}
+
+.project:hover {
+    background: #292929;
 }
 
 .project_left {
     width: 50%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .project_right {
     width: 50%;
     text-align: center;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .project_title {
@@ -133,4 +147,78 @@ html, body {
 
 .project_desc {
     font-size: 14px;
+}
+
+.project_link {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.about {
+    height: 400px;
+    background: rgb(41, 41, 41);
+    display: flex;
+    flex-direction: column;
+}
+
+.about_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.about_title {
+    font-size: 32px;
+}
+
+.about_bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.about_text {
+    margin-top: 10px;
+}
+
+.contact {
+    height: 400px;
+    background: rgb(66, 65, 65);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.contact_title {
+    font-size: 32px;
+}
+
+.contact_bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.contact_me {
+    color: rgba(25, 224, 25, 0.573);
+    transition: 0.3s;
+}
+
+.contact_me:hover {
+    color: rgba(25, 224, 25, 0.89);
+}
+
+.contact_text {
+    margin-top: 10px;
 }

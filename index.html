@@ -16,22 +16,28 @@
         <div class="intro">
             <div class="greeting">Hi I'm Michael. I'm a web developer located in Portland, Maine.</div>
             <div class="buttons_container">
-                <div class="btn projects_btn" onclick="handle_nav_click(this)">Projects</div>
-                <div class="btn about_btn" onclick="handle_nav_click(this)">About</div>
-                <div class="btn contact_btn" onclick="handle_nav_click(this)">Contact</div>
+                <div class="btn_outer projects_btn" onclick="handle_nav_click(this)">
+                    <div class="btn">Projects</div>
+                </div>
+                <div class="btn_outer about_btn" onclick="handle_nav_click(this)">
+                    <div class="btn">About</div>
+                </div>
+                <div class="btn_outer contact_btn" onclick="handle_nav_click(this)">
+                    <div class="btn">Contact</div>
+                </div>
             </div>
         </div>
 
+        <div class="title">Projects</div>
         <div class="projects">
-            <div class="title">Projects</div>
             <div class="project">
                 <div class="project_left">
                     <div class="project_title">JSON Parser c++</div>
                     <div class="project_desc">A simple JSON parser for use with c++</div>
                 </div>
                 <div class="project_right">
-                    <div>github link</div>
-                    <div>project link</div>
+                    <div class="project_link">github link</div>
+                    <div class="project_link">project link</div>
                 </div>
             </div>
             <div class="project">
@@ -40,8 +46,8 @@
                     <div class="project_desc">Track how many calories you eat</div>
                 </div>
                 <div class="project_right">
-                    <div>github link</div>
-                    <div>project link</div>
+                    <div class="project_link">github link</div>
+                    <div class="project_link">project link</div>
                 </div>
             </div>
             <div class="project">
@@ -50,8 +56,8 @@
                     <div class="project_desc">this is a project description, blah blah blah</div>
                 </div>
                 <div class="project_right">
-                    <div>github link</div>
-                    <div>project link</div>
+                    <div class="project_link">github link</div>
+                    <div class="project_link">project link</div>
                 </div>
             </div>
             <div class="project">
@@ -60,15 +66,32 @@
                     <div class="project_desc">this is a project description, blah blah blah</div>
                 </div>
                 <div class="project_right">
-                    <div>github link</div>
-                    <div>project link</div>
+                    <div class="project_link">github link</div>
+                    <div class="project_link">project link</div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="about">
+            <div class="about_top">
+                <div class="about_title">About Me</div>
+            </div>
+            <div class="about_bottom">   
+                <div class="about_text">blah blah blah</div>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contact_top">
+                <div class="contact_title">Contact</div>
+            </div>
+            <div class="contact_bottom">   
+                <div class="contact_text">Please feel free to <a class="contact_me" href="mailto:me@michaeldonlan.com">contact me</a> if you have any business inquiries or questions.</div>
+                <div class="contact_text">I am currently available for work.</div>
+            </div>
+        </div>
     
-    <script src="particles_pixi_bundle.js"></script>
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.5.1/browser/pixi.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/7/Stats.min.js"></script>
 </body>
 
 </html>
