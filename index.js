@@ -1,16 +1,18 @@
 window.onload = () => {
-    const rand = Math.floor(Math.random() * (1 - 0 + 1) + 0);
+    // const rand = Math.floor(Math.random() * (2));
     
-    let script_name;
-    if (rand == 0) {
-        script_name = "particles.js";
-    } else {
-        script_name = "boids.js";
-    }
+    // let script_name;
+    // if (rand == 0) {
+    //     script_name = "particles.js";
+    // } else {
+    //     script_name = "new_boids.js";
+    // }
 
-    const script = document.createElement('script');
-    script.src = script_name;
-    document.head.appendChild(script);
+    // const script_name = "newest_boids.js";
+
+    // const script = document.createElement('script');
+    // script.src = script_name;
+    // document.head.appendChild(script);
 }
 
 function handle_nav_click(e) {

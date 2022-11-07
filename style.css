@@ -142,11 +142,11 @@ html, body {
 }
 
 .project_title {
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 
 .project_desc {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .project_link {
@@ -155,7 +155,7 @@ html, body {
 }
 
 .about {
-    height: 400px;
+    height: 50%;
     background: rgb(41, 41, 41);
     display: flex;
     flex-direction: column;
@@ -181,11 +181,12 @@ html, body {
 }
 
 .about_text {
-    margin-top: 10px;
+    width: 50%;
+    line-height: 1.5;
 }
 
 .contact {
-    height: 400px;
+    height: 50%;
     background: rgb(66, 65, 65);
     display: flex;
     flex-direction: column;
