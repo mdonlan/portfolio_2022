@@ -13,6 +13,7 @@ html, body {
 	height: 100%;
 	width: 100%;
 	position: absolute;
+    overflow: hidden;
 }
 
 .root {
@@ -127,19 +128,21 @@ html, body {
 }
 
 .project_left {
-    width: 50%;
+    width: 70%;
     padding: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .project_right {
-    width: 50%;
+    width: 30%;
     text-align: center;
     padding: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    font-size: 18px;
 }
 
 .project_title {
@@ -153,6 +156,13 @@ html, body {
 .project_link {
     margin-top: 5px;
     margin-bottom: 5px;
+    color: rgba(211, 207, 201, 0.535);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.project_link:hover {
+    color: rgb(211, 207, 201);
 }
 
 .about {
